@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/countTv"
+        android:layout_width="163sp"
+        android:layout_height="93sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91sp"
+        android:gravity="center"
+        android:text="Count"
+        android:textSize="35sp"
+        />
+
+    <Button
+        android:onClick="increment"
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_toEndOf="@+id/countTv"
+        android:layout_marginTop="200sp"
+        android:text="+"
+        android:textSize="50sp"/>
+
+    <Button
+        android:onClick="decrement"
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_toStartOf="@+id/countTv"
+        android:layout_below="@+id/countTv"
+        android:text="-"
+        android:textSize="100sp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:onClick="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_below="@+id/btnMinus"
+        android:layout_centerHorizontal="true"
+        android:text="Reset"
+        android:textSize="20sp"/>
+
+
+
+</RelativeLayout>
